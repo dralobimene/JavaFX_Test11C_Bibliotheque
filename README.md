@@ -32,3 +32,5 @@ project structure
     - F03_emprunt_fxml.fxml
     - main_fxml.fxml
 - module-info.java
+
+SQL = SQL query to create and fill in DB
