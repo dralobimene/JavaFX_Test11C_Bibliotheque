@@ -1,0 +1,136 @@
+SQL DB
+
+-- Adminer 4.8.1 MySQL 5.5.5-10.5.15-MariaDB-0+deb11u1 dump
+
+SET NAMES utf8;
+SET time_zone = '+00:00';
+SET foreign_key_checks = 0;
+SET sql_mode = 'NO_AUTO_VALUE_ON_ZERO';
+
+DROP TABLE IF EXISTS `client`;
+CREATE TABLE `client` (
+  `id_abonne` int(3) NOT NULL AUTO_INCREMENT,
+  `prenom` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+  `nom` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+  `telephone` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+  `mail` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`id_abonne`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+INSERT INTO `client` (`id_abonne`, `prenom`, `nom`, `telephone`, `mail`) VALUES
+(1,	'Armand',	'Tralicot',	'0900000000',	'armand.tralicot@orange.fr'),
+(2,	'Benoit',	'Martin',	'0701020304',	'benoit.martin@orange.fr'),
+(3,	'Chloe',	'Salindro',	'0609080706',	'chloe.salindro@gmail.com'),
+(4,	'Laura',	'Durand',	'0709080706',	'laura.durand@yahoo.com'),
+(5,	'Frederic',	'Malovin',	'0501020304',	'frederic.malovin@hotmail.com'),
+(6,	'Claire',	'Duchenal',	'0233445566',	'claire.duchenal@wanadoo.fr'),
+(7,	'Frank',	'Duchemin',	'0102033211',	'frank.duchemin@gmx.fr'),
+(8,	'Sylvaine',	'Lelfe',	'0200112233',	'sylvaine.lelfe@wanadoo.fr'),
+(9,	'André',	'Leborge',	'0144667799',	'andre.leborge@gmail.com'),
+(10,	'David',	'Crolitol',	'0700115533',	'david.crolitol@hotmail.com'),
+(11,	'Delphine',	'Aphacrone',	'0122337745',	'delphine.aphacrone@wanadoo.fr'),
+(12,	'Zoe',	'Baligrand',	'0900223344',	'zoe.baligrand@gmx.fr'),
+(13,	'Daniel',	'Palomino',	'0633012243',	'daniel.palomino@yahoo.fr'),
+(14,	'Elodie',	'Trivanol',	'0455776539',	'elodie.trivanol@caramail.com'),
+(16,	'Beatrice',	'Oronifla',	'0299887721',	'beatrice.oronifla@gmail.com'),
+(17,	'Krystelle',	'Dupaquot',	'0966456732',	'krystell.dupaquot@free.fr'),
+(18,	'Bernard',	'Nivalot',	'0844556386',	'bernard.nivalot@wanadoo.fr'),
+(19,	'Yvan',	'Ferel',	'0566873329',	'yvan.ferel@gmail.com'),
+(20,	'Sebastien',	'Coniflex',	'0945367754',	'sebastien.coniflex@gmail.com'),
+(21,	'Gaetan',	'Defloral',	'0655120955',	'gaetan.defloral@free.fr'),
+(22,	'Ghislaine',	'verfna',	'0643557738',	'ghislaine.verfna@caramail.com'),
+(23,	'Eloise',	'Plofichinelle',	'0743662943',	'eloise.plofichinelle@yahoo.fr'),
+(25,	'Christian',	'Plebert',	'0576345611',	'christian.plebert@hotmail.com'),
+(26,	'Didier',	'Duboulevard',	'0643127654',	'didier.duboulevard@gmail.fr'),
+(27,	'Michele',	'tribhogard',	'0945678231',	'michele.thibhogard@gmx.fr'),
+(28,	'Eloise',	'plinelle',	'0945632435',	'eloise.plinelle@gmx.com'),
+(29,	'Yoann',	'Chavrille',	'0956823490',	'yoann.chavrille@caramail.com'),
+(30,	'Laurence',	'Jufinet',	'0933547829',	'laurent.jufinet@hotmail.com'),
+(31,	'Damien',	'Olafford',	'0455687312',	'damien.olafford@free.fr'),
+(32,	'Willian',	'Prodark',	'0954367222',	'william.prodark@wanadoo.fr'),
+(33,	'Estelle',	'Labranche',	'0923146533',	'estelle.labranche@hotmail.com'),
+(34,	'Erica',	'Ophnambourg',	'0312346488',	'erica.ophnambourg@free.fr'),
+(35,	'Eric',	'Delatable',	'0912945677',	'eric.delatable@gmail.fr'),
+(36,	'Fabienne',	'Grotuberg',	'0612312254',	'fabienne.grotuberg'),
+(37,	'Gaelle',	'Gerbinard',	'0844364512',	'gaelle.gerbinard@caramil.com'),
+(38,	'Armande',	'Calopal',	'0426491203',	'armande.calopal@gmail.fr'),
+(39,	'Berenice',	'Narpal',	'0421389322',	'berenice.narpal@gmx.fr'),
+(40,	'Cedric',	'Nguyen',	'0237889200',	'cedric.nguyen@hotmail.fr'),
+(41,	'Celeste',	'Bargoin',	'0921487544',	'celeste.bargoin@caramail.com'),
+(42,	'Fabrice',	'Delajoie',	'0427632250',	'fabrice.delajoie@free.fr'),
+(43,	'Francine',	'Modave',	'0318745633',	'francine.modave@orange.fr'),
+(44,	'Gael',	'vinfent',	'0349771203',	'gael.vinfent@orange.fr'),
+(45,	'Gaetan',	'Alifonelle',	'0327656680',	'gaetan.alifonelle@free.fr'),
+(46,	'Francoise',	'Loplat',	'0277034167',	'francoise.loplat@wanadoo.fr'),
+(47,	'Laurence',	'Kazinski',	'0911448834',	'laurence.kazinski@gmail.com'),
+(48,	'Loic',	'Herbert',	'0946123809',	'loic.herbert@wanadoo.fr'),
+(49,	'Olivia',	'Bratin',	'0528935177',	'olivia.bratin@caramail.com'),
+(50,	'Olivier',	'Meschelle',	'0913253899',	'olivier.meschelle@gmail.com'),
+(52,	'Armando',	'Distefano',	'0933165542',	'armando.distefano@gmail.fr'),
+(53,	'Silene',	'Noguera',	'0315436603',	'silene.noguera@gmx.fr'),
+(54,	'Zoe',	'Delabrouette',	'0127659324',	'zoe.delabrouette@orange.com'),
+(55,	'Dalila',	'Oujmekek',	'0544763217',	'dalila.oujmeket@free.fr');
+
+DROP TABLE IF EXISTS `emprunt`;
+CREATE TABLE `emprunt` (
+  `id_emprunt` int(3) NOT NULL AUTO_INCREMENT,
+  `id_livre` int(3) DEFAULT NULL,
+  `id_abonne` int(3) DEFAULT NULL,
+  `date_sortie` date NOT NULL,
+  `date_rendu` date DEFAULT NULL,
+  PRIMARY KEY (`id_emprunt`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+INSERT INTO `emprunt` (`id_emprunt`, `id_livre`, `id_abonne`, `date_sortie`, `date_rendu`) VALUES
+(1,	100,	1,	'2014-12-17',	'2014-12-18'),
+(2,	101,	2,	'2014-12-18',	'2014-12-20'),
+(3,	100,	3,	'2014-12-19',	'2014-12-22'),
+(4,	103,	4,	'2014-12-19',	'2014-12-22'),
+(5,	104,	1,	'2014-12-19',	'2014-12-28'),
+(8,	100,	2,	'2015-06-15',	NULL);
+
+DROP TABLE IF EXISTS `livre`;
+CREATE TABLE `livre` (
+  `id_livre` int(3) NOT NULL AUTO_INCREMENT,
+  `auteur` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
+  `titre` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`id_livre`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+INSERT INTO `livre` (`id_livre`, `auteur`, `titre`) VALUES
+(100,	'GUY DE MAUPASSANT',	'Une vie'),
+(101,	'GUY DE MAUPASSANT',	'Bel-Ami '),
+(102,	'HONORE DE BALZAC',	'Le père Goriot'),
+(103,	'ALPHONSE DAUDET',	'Le Petit chose'),
+(104,	'ALEXANDRE DUMAS',	'La Reine Margot'),
+(105,	'ALEXANDRE DUMAS',	'Les Trois Mousquetaires'),
+(106,	'JACQUES WEBER',	'Les Fourmis'),
+(107,	'Moi',	'Chez Moi'),
+(108,	'Toi',	'Chez Toi'),
+(109,	'Nous',	'Chez Nous'),
+(110,	'Caleb Carr',	'Alieniste'),
+(111,	'Test001',	'Testé001'),
+(112,	'Test02',	'Adulte'),
+(114,	'Test04',	'Test04 titre'),
+(115,	'Test05',	'Test05 titre'),
+(116,	'Test06',	'Test06titre'),
+(118,	'test10',	'titre10'),
+(121,	'Test11',	'test11titre'),
+(122,	'Test12',	'test12titre'),
+(123,	'test13Aauteur',	'test13Atitre'),
+(124,	'test14auteur',	'test14titre'),
+(125,	'test15auteur',	'test15titre'),
+(126,	'test16auteur',	'test16titre'),
+(127,	'test17auteur',	'test17titre'),
+(128,	'test18auteur',	'test18titre'),
+(129,	'test19auteur',	'test19titre'),
+(130,	'test20auteur',	'test20titre'),
+(131,	'test21auteur',	'test21titre'),
+(132,	'test22auteur',	'test22titre'),
+(133,	'test23auteur',	'test23titre'),
+(134,	'test24auteur',	'test24titre'),
+(135,	'test25auteur',	'test25titre'),
+(136,	'test26auteur',	'test26titre'),
+(137,	'test27auteur',	'test27titre');
+
+-- 2022-07-14 09:40:39
