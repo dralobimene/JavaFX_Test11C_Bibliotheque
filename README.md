@@ -1,4 +1,8 @@
 # JavaFX_Test11C_Bibliotheque
+# NOT FINISHED,
+# a lot of code commented
+# a lot of comments (only french)
+# i'm working on it (2022, 07, 14)
 
 project structure
 
