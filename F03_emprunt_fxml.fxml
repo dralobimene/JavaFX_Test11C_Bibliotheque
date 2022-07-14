@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane
+	fx:id="AP"
+	prefHeight="600.0"
+	prefWidth="800.0"
+	xmlns="http://javafx.com/javafx/18"
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="application.view.F03_emprunt_controller">
+	<children>
+		<Pane
+			fx:id="P"
+			prefHeight="600.0"
+			prefWidth="800.0"
+			AnchorPane.bottomAnchor="0.0"
+			AnchorPane.leftAnchor="0.0"
+			AnchorPane.rightAnchor="0.0"
+			AnchorPane.topAnchor="0.0">
+			<children>
+				<TableView
+					fx:id="TV"
+					layoutX="120.0"
+					layoutY="21.0"
+					prefHeight="120.0"
+					prefWidth="560.0">
+					<columns>
+						<TableColumn
+							fx:id="col_id_emprunt"
+							prefWidth="110.0"
+							text="id_emprunt" />
+						<TableColumn
+							fx:id="col_id_livre"
+							prefWidth="97.0"
+							text="id_livre" />
+						<TableColumn
+							fx:id="col_id_abonne"
+							prefWidth="112.0"
+							text="id_abonne" />
+						<TableColumn
+							fx:id="col_date_sortie"
+							prefWidth="105.0"
+							text="date_sortie" />
+						<TableColumn
+							fx:id="col_date_rendu"
+							prefWidth="134.0"
+							text="date_rendu" />
+					</columns>
+				</TableView>
+				<Label
+					fx:id="lbl_presente_id_emprunt"
+					layoutX="43.0"
+					layoutY="347.0"
+					text="id_emprunt:" />
+				<Label
+					fx:id="lbl_presente_id_livre"
+					layoutX="43.0"
+					layoutY="385.0"
+					text="id_livre:" />
+				<Label
+					fx:id="lbl_presente_id_abonne"
+					layoutX="43.0"
+					layoutY="427.0"
+					text="id_abonne:" />
+				<Label
+					fx:id="lbl_presente_date_sortie"
+					layoutX="43.0"
+					layoutY="468.0"
+					text="date_sortie:" />
+				<Label
+					fx:id="lbl_presente_date_rendu"
+					layoutX="43.0"
+					layoutY="507.0"
+					text="date_rendu:" />
+				<Label
+					fx:id="lbl_contient_id_emprunt"
+					layoutX="158.0"
+					layoutY="347.0"
+					text="Label" />
+				<Label
+					fx:id="lbl_contient_id_livre"
+					layoutX="158.0"
+					layoutY="385.0"
+					text="Label" />
+				<Label
+					fx:id="lbl_contient_id_abonne"
+					layoutX="158.0"
+					layoutY="427.0"
+					text="Label" />
+				<Label
+					fx:id="lbl_contient_date_sortie"
+					layoutX="158.0"
+					layoutY="468.0"
+					text="Label" />
+				<Label
+					fx:id="lbl_contient_date_rendu"
+					layoutX="158.0"
+					layoutY="507.0"
+					text="Label" />
+				<TableView
+					fx:id="TV01"
+					layoutX="120.0"
+					layoutY="160.0"
+					prefHeight="146.0"
+					prefWidth="200.0">
+					<columns>
+						<TableColumn
+							fx:id="TV01_col_prenom"
+							prefWidth="75.0"
+							text="C1" />
+						<TableColumn
+							fx:id="TV01_col_titre"
+							prefWidth="75.0"
+							text="C2" />
+					</columns>
+				</TableView>
+				<TableView
+					fx:id="TV02"
+					layoutX="448.0"
+					layoutY="160.0"
+					prefHeight="146.0"
+					prefWidth="200.0">
+					<columns>
+						<TableColumn
+							fx:id="TV02_col_prenom"
+							prefWidth="75.0"
+							text="TV02_col_prenom" />
+						<TableColumn
+							fx:id="TV02_col_titre"
+							prefWidth="75.0"
+							text="TV02_col_titre" />
+					</columns>
+				</TableView>
+				<Button
+					fx:id="btn_creer"
+					layoutX="320.0"
+					layoutY="543.0"
+					mnemonicParsing="false"
+					onAction="#creer_emprunt"
+					text="Creer" />
+				<Button
+					fx:id="btn_effacer"
+					layoutX="400.0"
+					layoutY="543.0"
+					mnemonicParsing="false"
+					onAction="#effacer_emprunt"
+					text="effacer" />
+				<Button
+					fx:id="btn_editer"
+					layoutX="486.0"
+					layoutY="543.0"
+					mnemonicParsing="false"
+					onAction="#editer_emprunt"
+					text="editer" />
+				<Button
+					fx:id="btn_quitter"
+					layoutX="568.0"
+					layoutY="543.0"
+					mnemonicParsing="false"
+					onAction="#quitter_emprunt"
+					text="quitter" />
+				<TableView
+					fx:id="TV03"
+					layoutX="448.0"
+					layoutY="327.0"
+					prefHeight="200.0"
+					prefWidth="200.0">
+					<columns>
+						<TableColumn
+							fx:id="TV03_col_prenom"
+							prefWidth="75.0"
+							text="prenom" />
+						<TableColumn
+							fx:id="TV03_col_titre"
+							prefWidth="75.0"
+							text="titre" />
+					</columns>
+				</TableView>
+			</children>
+		</Pane>
+	</children>
+</AnchorPane>

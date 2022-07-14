@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane
+	fx:id="AP"
+	prefHeight="600.0"
+	prefWidth="600.0"
+	onKeyPressed="#appui_touche"
+	xmlns="http://javafx.com/javafx/18"
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="application.view.F01_controller">
+	<children>
+		<Pane
+			fx:id="P"
+			prefHeight="600.0"
+			prefWidth="600.0"
+			AnchorPane.bottomAnchor="0.0"
+			AnchorPane.leftAnchor="0.0"
+			AnchorPane.rightAnchor="0.0"
+			AnchorPane.topAnchor="0.0">
+			<children>
+				<TableView
+					fx:id="TV"
+					layoutX="20.0"
+					layoutY="41.0"
+					prefHeight="200.0"
+					prefWidth="561.0">
+					<columns>
+						<TableColumn
+							fx:id="col_ID"
+							prefWidth="75.0"
+							text="ID" />
+						<TableColumn
+							fx:id="col_AUTEUR"
+							prefWidth="75.0"
+							text="AUTEUR" />
+						<TableColumn
+							fx:id="col_TITRE"
+							prefWidth="75.0"
+							text="TITRE" />
+					</columns>
+				</TableView>
+				<Label
+					fx:id="lbl_presente_ID"
+					layoutX="95.0"
+					layoutY="300.0"
+					text="ID:" />
+				<Label
+					fx:id="lbl_presente_AUTEUR"
+					layoutX="95.0"
+					layoutY="343.0"
+					text="Auteur:" />
+				<Label
+					fx:id="lbl_presente_TITRE"
+					layoutX="95.0"
+					layoutY="387.0"
+					text="Titre" />
+				<Label
+					fx:id="lbl_contient_ID"
+					layoutX="193.0"
+					layoutY="300.0"
+					text="Label" />
+				<Label
+					fx:id="lbl_contient_AUTEUR"
+					layoutX="193.0"
+					layoutY="343.0"
+					text="Label" />
+				<Label
+					fx:id="lbl_contient_TITRE"
+					layoutX="193.0"
+					layoutY="387.0"
+					text="Label" />
+				<Button
+					fx:id="btn_quitter"
+					layoutX="47.0"
+					layoutY="458.0"
+					mnemonicParsing="false"
+					onAction="#quitter_section_livre"
+					text="Quitter" />
+				<Button
+					fx:id="btn_creer"
+					layoutX="142.0"
+					layoutY="458.0"
+					mnemonicParsing="false"
+					onAction="#creerLivre"
+					text="Creer" />
+				<Button
+					fx:id="btn_editer"
+					layoutX="239.0"
+					layoutY="458.0"
+					mnemonicParsing="false"
+					onAction="#editerLivre"
+					text="Editer" />
+				<Button
+					fx:id="btn_effacer"
+					layoutX="334.0"
+					layoutY="458.0"
+					mnemonicParsing="false"
+					onAction="#effacerLivre"
+					text="Effacer" />
+			</children>
+		</Pane>
+	</children>
+</AnchorPane>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane
+	fx:id="AP"
+	prefHeight="400.0"
+	prefWidth="600.0"
+	xmlns="http://javafx.com/javafx/18"
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="application.view.F02B_controller">
+	<children>
+		<Pane
+			fx:id="P"
+			prefHeight="400.0"
+			prefWidth="600.0"
+			AnchorPane.bottomAnchor="0.0"
+			AnchorPane.leftAnchor="0.0"
+			AnchorPane.rightAnchor="0.0"
+			AnchorPane.topAnchor="0.0">
+			<children>
+				<Label
+					fx:id="lbl_presente_id"
+					layoutX="17.0"
+					layoutY="31.0"
+					text="ID: (non editable)" />
+				<Label
+					fx:id="lbl_presente_PRENOM"
+					layoutX="17.0"
+					layoutY="106.0"
+					text="Nveau Prenom:" />
+				<Label
+					fx:id="lbl_presente_NOM"
+					layoutX="17.0"
+					layoutY="183.0"
+					text="Nveau Nom:" />
+				<Label
+					fx:id="lbl_presente_TELEPHONE"
+					layoutX="17.0"
+					layoutY="264.0"
+					text="Nveau téléphone:" />
+				<Label
+					fx:id="lbl_presente_MAIL"
+					layoutX="15.0"
+					layoutY="347.0"
+					text="Nveau mail:" />
+				<TextField
+					fx:id="txtF_contient_ID"
+					editable="false"
+					layoutX="181.0"
+					layoutY="27.0" />
+				<TextField
+					fx:id="txtF_contient_PRENOM"
+					layoutX="181.0"
+					layoutY="102.0" />
+				<TextField
+					fx:id="txtF_contient_NOM"
+					layoutX="181.0"
+					layoutY="179.0" />
+				<TextField
+					fx:id="txtF_contient_TELEPHONE"
+					layoutX="181.0"
+					layoutY="260.0" />
+				<TextField
+					fx:id="txtF_contient_MAIL"
+					layoutX="181.0"
+					layoutY="343.0" />
+				<Button
+					fx:id="btn_MAJ"
+					layoutX="426.0"
+					layoutY="358.0"
+					mnemonicParsing="false"
+					onAction="#MAJClient"
+					text="MAJ" />
+				<Button
+					fx:id="btn_annuler"
+					layoutX="490.0"
+					layoutY="358.0"
+					mnemonicParsing="false"
+					onAction="#annuler"
+					text="Annuler" />
+				<Label
+					fx:id="lbl_presente_actuel_prenom"
+					layoutX="17.0"
+					layoutY="76.0"
+					text="Prénom actuel:" />
+				<Label
+					fx:id="lbl_contient_actuel_prenom"
+					layoutX="181.0"
+					layoutY="76.0"
+					text="Label" />
+				<Label
+					fx:id="lbl_presente_actuel_nom"
+					layoutX="17.0"
+					layoutY="151.0"
+					text="Nom actuel:" />
+				<Label
+					fx:id="lbl_contient_actuel_nom"
+					layoutX="181.0"
+					layoutY="151.0"
+					text="Label" />
+				<Label
+					fx:id="lbl_presente_actuel_telephone"
+					layoutX="15.0"
+					layoutY="233.0"
+					text="Téléphone actuel:" />
+				<Label
+					fx:id="lbl_contient_actuel_telephone"
+					layoutX="181.0"
+					layoutY="233.0"
+					text="Label" />
+				<Label
+					fx:id="lbl_presente_actuel_mail"
+					layoutX="15.0"
+					layoutY="319.0"
+					text="Mail actuel:" />
+				<Label
+					fx:id="lbl_contient_actuel_mail"
+					layoutX="181.0"
+					layoutY="319.0"
+					text="Label" />
+				<Line
+					endX="100.0"
+					layoutX="266.0"
+					layoutY="64.0"
+					startX="-100.0" />
+				<Line
+					endX="100.0"
+					layoutX="266.0"
+					layoutY="144.0"
+					startX="-100.0" />
+				<Line
+					endX="100.0"
+					layoutX="266.0"
+					layoutY="221.0"
+					startX="-100.0" />
+				<Line
+					endX="100.0"
+					layoutX="266.0"
+					layoutY="307.0"
+					startX="-100.0" />
+			</children>
+		</Pane>
+	</children>
+</AnchorPane>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane
+	fx:id="AC"
+	prefHeight="350.0"
+	prefWidth="600.0"
+	xmlns="http://javafx.com/javafx/18"
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="application.view.F01B_controller">
+	<children>
+		<Pane
+			fx:id="P"
+			prefHeight="350.0"
+			prefWidth="600.0"
+			AnchorPane.bottomAnchor="0.0"
+			AnchorPane.leftAnchor="0.0"
+			AnchorPane.rightAnchor="0.0"
+			AnchorPane.topAnchor="0.0">
+			<children>
+				<Label
+					fx:id="lbl_presente_ID"
+					layoutX="14.0"
+					layoutY="34.0"
+					text="ID: (non editable)" />
+				<Label
+					fx:id="lbl_presente_AUTEUR"
+					layoutX="14.0"
+					layoutY="126.0"
+					text="Nvel auteur:" />
+				<Label
+					fx:id="lbl_presente_TITRE"
+					layoutX="14.0"
+					layoutY="224.0"
+					text="Nveau titre:" />
+				<TextField
+					fx:id="txtF_contient_ID"
+					editable="false"
+					layoutX="150.0"
+					layoutY="30.0"
+					promptText="NON EDITABLE" />
+				<TextField
+					fx:id="txtF_contient_AUTEUR"
+					layoutX="150.0"
+					layoutY="122.0"
+					promptText="Renseignez 1 auteur" />
+				<TextField
+					fx:id="txtF_contient_TITRE"
+					layoutX="150.0"
+					layoutY="220.0"
+					promptText="Renseigner 1 titre" />
+				<Button
+					fx:id="btn_MAJ"
+					layoutX="394.0"
+					layoutY="315.0"
+					mnemonicParsing="false"
+					onAction="#MAJ"
+					text="MAJ" />
+				<Button
+					fx:id="btn_annuler"
+					layoutX="502.0"
+					layoutY="315.0"
+					mnemonicParsing="false"
+					onAction="#annuler"
+					text="Annuler" />
+				<Label
+					fx:id="lbl_presente_AUTEUR_actuel"
+					layoutX="14.0"
+					layoutY="80.0"
+					text="Auteur actuel:" />
+				<Label
+					fx:id="lbl_presente_TITRE_actuel"
+					layoutX="14.0"
+					layoutY="175.0"
+					text="Titre actuel:" />
+				<Label
+					fx:id="lbl_contient_AUTEUR_actuel"
+					layoutX="150.0"
+					layoutY="80.0"
+					text="Label" />
+				<Label
+					fx:id="lbl_contient_TITRE_actuel"
+					layoutX="150.0"
+					layoutY="175.0"
+					text="Label" />
+			</children>
+		</Pane>
+	</children>
+</AnchorPane>
